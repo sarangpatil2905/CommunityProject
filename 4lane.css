@@ -40,7 +40,7 @@ main .Lane4 .Display .full4{
 }
 
 main .Lane4 .Display .Simulator4{
-    background-image: url("./4Lane.png");
+    background-image: url("./4lane.png");
     background-size: 100% 100%;
 }
 .slider-container4 {
