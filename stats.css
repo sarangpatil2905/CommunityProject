@@ -1,0 +1,101 @@
+main .stats {
+    margin: 1.4rem;      
+}
+
+main .stats > .Displays {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.6rem;
+}
+
+main .stats > .Displays > div {
+    background-color: var(--color-background);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 1rem 1rem 1.5rem #1f1e3016;
+    height: 40rem;
+}
+
+main .stats > .Displays > .page {
+    display: none; /* Hide all pages by default */
+}
+
+.page1 {
+    display: block; /* Show only Page 1 */
+}
+
+
+.stats h2 {
+    text-align: left;
+}
+
+.stats .page> img {
+    width: 85%;
+    margin: 0px;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+}
+
+.selector > button {
+ 
+    width: 30px; 
+    height: 30px; 
+    margin: 0 0.5rem; 
+    padding: 0;
+    border-radius: 5px; 
+    border: 1px solid #ccc; 
+    background-color: var(--color-dark);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.selector > button:hover {
+    background-color: #ddd; /* Light background on hover */
+}
+
+.first{
+    position:absolute;
+    top: 22%;
+    left:51.5%
+}
+.second{
+    position:absolute;
+    top: 27%;
+    left:51.5%
+}
+.third{
+    position:absolute;
+    top: 32%;
+    left:51.5%
+}
+
+.fourth{
+    position:absolute;
+    top: 37%;
+    left:51.5%
+}
+
+.Apage {
+    display: flex;
+    flex-direction: column; /* Arrange rows vertically */
+    align-items: center; /* Center rows horizontally */
+    gap: 1rem; /* Space between rows of images */
+    margin-top: 1rem; /* Space from the top */
+}
+
+.Apage span {
+    display: flex; 
+    justify-content: center;}
+
+.Apage img {
+    width: 35%;
+    margin: 0px;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+}

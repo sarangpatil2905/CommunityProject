@@ -1,0 +1,233 @@
+main .Lane4{
+    margin: 1.4rem;      
+}
+    
+main .Lane4 .Display{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 1.6rem;
+}
+
+main .Lane4 .Display .Infocard4{
+    display: grid;
+    grid-template-rows:repeat(2 1fr) ;
+}
+
+main .Lane4 .Display .partial4 > div{
+    background-color: var(--color-background);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin-top: 1rem;
+    height: 19rem;    
+
+    text-align: justify;
+    line-height: 2rem;
+    font-size: 1rem;
+    
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 1rem 1rem 1.5rem #1f1e3016;
+}
+
+main .Lane4 .Display .full4{
+    background-color: var(--color-background);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 1rem 1rem 1.5rem #1f1e3016;
+}
+
+main .Lane4 .Display .Simulator4{
+    background-image: url("./4Lane.png");
+    background-size: 100% 100%;
+}
+.slider-container4 {
+    background-color: none;
+
+}
+.Control-Panel4 h2{
+    font-size: 1.5rem;
+}
+
+.break{
+    width: 120%;
+    margin-left: -1.8rem;
+
+}
+div .switch span{
+    position: relative;
+    font-size: 1.2rem;
+    top: -4px;
+}
+.Control-Panel4{
+    position: relative;
+}
+
+.title{
+    position: absolute;
+    rotate: 90deg;
+    top:167px;
+    left:137px;
+    width:267px;
+    height:61px;
+    background-color: var(--color-hover);
+    text-align: center;
+    align-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--color-background);
+    border-radius: 0 0 15px 15px;
+}
+
+.slider-container4 div span{
+    position: relative;
+    align-items: center;
+    font-size: 1.1rem;
+    top: -5px;
+    left: 5px;
+}
+.modeToggle4{
+    appearance: none;
+    width: 40px;
+    max-width:40px;
+    height: 20px;
+    border-radius: 10px;
+    background: var(--color-dark); /* Default color: yellow for Medium */
+    outline: none;
+    opacity: 0.9;
+    transition: background .3s ease-in-out;
+    margin: 0;
+    padding: 0 2px;
+}
+    .modeToggle4::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 16px;
+        height: 16px;
+        background: #fff;
+        border: 0;
+        border-radius: 50%;
+        cursor: pointer;
+        position: relative;
+        top: 0px;
+    }
+
+.slider4 {
+    appearance: none;
+    width: 9rem;
+    max-width: 9rem;
+    height: 1.2rem;
+    border-radius: 6px;
+    background: #E9C46A; /* Default color: yellow for Medium */
+    outline: none;
+    opacity: 0.9;
+    transition: background .3s ease-in-out;
+    margin: 0;
+    padding: 0px .4rem;
+}
+
+.slider4::-webkit-slider-thumb {
+    
+    -webkit-appearance: none;
+    width: 1rem;
+    height: 1rem;
+    background: #fff;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    top: 0px;
+}
+
+.compare-div {
+    padding: 20px 0px;
+    background-color: var(--color-dark);
+    color: white;
+    cursor: pointer;
+    font-size: medium;
+    font-weight: 600;
+    text-align: center;
+    width: 120%;
+    margin: 0;
+    position: relative;
+    left: -10%;
+    top: 27px;
+    border-radius: 0 0 20px 20px;
+}
+
+.content-section {
+    padding: 20px;
+}
+
+.start4{
+    position: relative;
+
+    width: 100%;
+    height: 100px;
+    padding: 0;
+}
+.status4{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 20px;
+    left: 180px;
+    border-radius: 50%;
+    background-color: #E76F51;
+}
+.status4 .filler{
+    width: 60%;
+    height: 60%;
+    background-color: var(--color-background);
+    position: relative;
+    top: 20%;
+    left: 20%;
+    border-radius: 50%;
+    box-shadow: .5rem 1rem .5rem #2e28284a;
+}
+.start4 button{
+    position: relative;
+    top: 15px;
+    height: 40px;
+    width: 60%;
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+    border: 0;
+    background-color: #6CD089;
+    color: var(--color-white);
+}
+.start4 .stop4{
+    background-color: #ccc;
+}
+
+.comparison-table {
+    position: absolute;
+    top:0px;
+    left: 0px;
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: var(--color-background);
+}
+
+.comparison-table table {
+    margin: 10px;
+    width: 90%;
+    border: 0;    
+}
+
+.comparison-table th, .comparison-table td {
+    padding: 8px;
+    border-radius: 5px;
+    border: 0;
+    text-align: left;
+}
+.comparison-table th{
+    background-color: #dedede;
+}
+
+.hidden {
+    display: none;
+}

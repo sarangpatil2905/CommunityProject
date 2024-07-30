@@ -1,0 +1,228 @@
+:root{
+    --color-primary: #6C9BCF;
+    --color-danger: #FF0060;
+    --color-success: #1B9C85;
+    --color-warning: #F7D060;
+    --color-white: #fff;
+    --color-info-dark: #7d8da1;
+    --color-dark: #1F1E30;
+    --color-light: rgba(132, 139, 200, 0.18);
+    --color-dark-variant: #677483;
+    --color-background: #f6f6f2;
+
+    --color-hover: #f6b17a;
+
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 1.2rem;
+
+    --card-padding: 1.8rem;
+    --padding-1: 1.2rem;
+
+    --color-shadow: rgba(139, 144, 192, 0.388);
+    --box-shadow: 0 2rem 2rem var(--color-light);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+html{
+    font-size: 14px;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.88rem;
+    user-select: none;
+    overflow-x: hidden;
+    color: var(--color-dark);
+    background-color: var(--color-background);
+}
+a{
+    color: var(--color-background);
+}
+h1{
+    font-size: 1.8rem;
+    font-family: consolas;
+}
+
+h2{
+    text-align: center;
+}
+
+.container{
+    display: grid;
+    width: 96%;
+    margin: 0 auto;
+    gap: .8rem;
+    grid-template-columns: 12rem 92rem ;
+}
+
+
+
+aside{
+    height: 100vh;
+}
+aside .Logo{
+    position: relative;
+    top: 1.5rem;
+    height: 3rem;
+    width: 100%;
+    background-color: var(--color-hover);
+    border-radius: 15px 15px 0 0;
+    box-shadow: var(--box-shadow);
+}
+aside .sidebar{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    background-color: var(--color-dark);
+    border-radius: 0 0 15px 15px;
+    box-shadow: var(--box-shadow);
+    height: 88vh;
+    position: relative;
+    font-family: 'consolas';
+    top: 1.5rem;
+    transition: all 0.3s ease;
+}
+aside .sidebar:hover{
+    box-shadow: none;
+}
+aside .sidebar ul li{
+    list-style: none;
+    line-height: 3rem;
+    margin:5px 0px;
+}
+aside .sidebar ul li a{
+    display: flex;
+    align-items: center;
+    color: var(--color-white);
+    width: 10rem;
+    gap: 1rem;
+    position: relative;
+    margin-left: 1rem;
+    transition: all 0.2s ease;
+    text-align: center;
+    font-size: 1.1rem;
+}
+aside .sidebar a i{
+    font-size: 1.2rem;
+    margin-left: .7rem;
+    transition: all 0.3s ease;
+}
+.sidebar ul li a:hover{
+    border-radius: 1.3rem;
+    background-color: var(--color-hover);
+}
+.sidebar ul li a.active {
+    width: 110%;
+    border-radius:15px 0 0 15px;
+    color: var(--color-dark);
+    background-color: var(--color-white);}
+
+.content.active {
+    display: block;}
+
+main{
+    margin-top: 1.4rem;
+    background-color: var(--color-white);
+    height: 94vh;
+    border-radius: 15px;
+    box-shadow: var(--box-shadow);
+}
+
+
+.red.active{
+    background-color: #E76F51;
+}
+.yellow.active{
+    background-color:#E9C46A ;
+}
+.green.active{
+    background-color: #36BA98;
+}
+
+
+
+.Traffic-Lights{
+    margin: 0px;
+    position:relative;
+    z-index: 1;
+    left: 0px;
+    top: 0px;
+    display: flex;
+    width: 100%;
+    height: 100%;}    
+    .light{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        width: 50px;
+        height: 130px;
+        background-color: #131842; 
+        justify-content: space-evenly;
+        align-items: center;  
+        border-radius: 25px;}
+        #light1{
+            position: absolute;
+            left:67%;
+            top:22%;
+            box-shadow: 0px 5px var(--color-shadow);
+        }
+        #light2{
+            rotate: 120deg;
+            position: absolute;
+            left: 55%;
+            top: 80%;
+            box-shadow: 5px -3px var(--color-shadow);
+        }
+        #light3{
+            position: absolute;
+            rotate: 240deg;
+            left: 15%;
+            top:40%;
+            box-shadow: -5px -3px var(--color-shadow);
+            }
+            #light4{
+                position: absolute;
+                left:67%;
+                box-shadow: 0px 5px var(--color-shadow);
+            }
+            #light5{
+                rotate: 90deg;
+                position: absolute;
+                left: 79%;
+                top: 60.5%;
+                box-shadow: 5px 0px var(--color-shadow);
+            }
+            #light6{
+                position: absolute;
+                rotate: 180deg;
+                left: 23.5%;
+                top:73.5%;
+                box-shadow: 0px -5px var(--color-shadow);}
+            #light7{
+                position: absolute;
+                rotate: 270deg;
+                left: 9%;
+                top:9%;
+                box-shadow: -5px 0px var(--color-shadow);}
+            .light > div{
+                margin: 0;
+                padding: 0;
+                height:30px;
+                width: 30px;
+                border-radius: 50%;
+                text-align: center;
+                align-content: center;
+                color: var(--color-white);
+                font-size: 90%; 
+                background-color: #777;
+            }

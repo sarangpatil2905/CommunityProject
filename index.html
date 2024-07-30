@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> SmoothTrafficSolutions </title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="./style.css" rel="stylesheet">
+    <link href="./3lane.css" rel="stylesheet">
+    <link href="./4lane.css" rel="stylesheet">
+    <link href="./Home.css" rel="stylesheet">
+    <link href="./stats.css" rel="stylesheet">
+    <script src ="./index.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!--sidebar-->
+        <aside>
+            <div class="Logo">
+                    
+            </div>
+
+            <div class="sidebar">
+                <ul>
+                    <li>
+                        <a href="#" onclick="showContent('Home')">
+                            <i class='bx bx-home-alt-2'></i>
+                            <span class="link-name">Home</span> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="showContent('3Lane')">
+                            <i class='bx bxl-yahoo'></i>
+                            <span class="link-name">3-Lane View</span> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="showContent('4Lane')">
+                            <i class='bx bx-cross'></i>
+                            <span class="link-name">4-Lane View</span> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="showContent('stats')">
+                            <i class='bx bx-pie-chart-alt-2'></i>
+                            <span class="link-name">Stats</span> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="showContent('suggestions')">
+                            <i class='bx bx-message-square-dots'></i>
+                            <span class="link-name">Suggestions</span> 
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        
+        
+        <!--main contents-->
+        <main>
+
+            <section id="Home" class="content Home">
+                <h1>Welcome to SmoothTrafficSolutions.com!</h1>
+                <div class="Display">
+                    <div class="About">
+                        <div class="About-Info">
+                            <h2>About Us</h2>
+                            <p>Your go-to resource for innovative solutions to traffic issues in our community. We are Traffic Innovators, a passionate group dedicated to making our streets safer and more efficient for everyone. Our mission is to leverage technology and smart planning to address the traffic challenges faced by our area.</p>
+                        </div>
+                        <br>
+                        <div class="Contact-Info">
+                            <h2>Contact Us</h2>
+                            <p>Got questions or suggestions? Feel free to reach out to us!</p>
+                            <ul class="contact-info">
+                                <li><strong>Email:</strong> contact@smoothtrafficsolutions.com</li>
+                                <li><strong>Phone:</strong> (123) 456-7890</li>
+                                <li><strong>Address:</strong> 123 Community Road, Citytown</li>
+                            </ul>
+                        </div>
+                    </div>
+                
+                    <div class="Aim">
+                        <div class="Goals">
+                            
+                                <div class="hiddendata propose-solution" id="propose-solution">
+                                    <h2 >Solutions</h2>
+                                    <p><strong>Adaptive Traffic Light System</strong>Adaptive traffic lights use real-time data to adjust the timing of lights based on current traffic conditions. This can significantly reduce waiting times and improve traffic flow. Learn more about how adaptive traffic lights can benefit our community.</p>
+                                    
+                                    <p><strong>Carpool and Ride-Sharing Programs</strong>Encouraging carpooling and ride-sharing can decrease the number of vehicles on the road, leading to less congestion and lower emissions. Discover how you can participate in local carpool programs.</p>
+                                    
+                                    <p><strong>Pedestrian and Cyclist-Friendly Infrastructure</strong>Creating safe pathways for pedestrians and cyclists can promote walking and biking, reducing the reliance on cars. Explore our plans for new bike lanes and pedestrian crossings.</p>
+                                    
+                                </div>
+                            
+                            
+                            <h2 class="overlay">Our Goals</h2>
+                            <ul class="overlay">
+                                <li><strong>Reduce Traffic Congestion:</strong> Implement adaptive traffic light systems to improve traffic flow and reduce congestion.</li>
+                                <li><strong>Enhance Safety:</strong> Develop strategies to minimize accidents and ensure the safety of pedestrians and drivers.</li>
+                                <li><strong>Promote Sustainable Transport:</strong> Encourage the use of public transport, cycling, and walking to reduce the number of vehicles on the road.</li>
+                                <li><strong>Educate the Community:</strong> Raise awareness about traffic rules and the benefits of smart traffic management.</li>
+                                <br>
+                            </ul>
+                            
+                            <button id="propose">See Solutions We Propose</button>
+                        </div>
+                        
+                    
+                        <div class="involvement">
+                            <h2>Get Involved</h2>
+                            <p>
+                            We believe that community involvement is key to the success of our projects. Join us in making our streets safer and more efficient. Here’s how you can get involved:
+                            Volunteer: Help us with community outreach and events.
+                            Attend Meetings: Participate in our regular meetings to discuss traffic issues and solutions.
+                            Share Your Ideas: We value your input! Share your thoughts and suggestions on how to improve traffic in our area.
+                            </p>
+                        </div>
+                        <p class="footer">Thank you for visiting SmoothTrafficSolutions.com. Together, we can create a smoother, safer, and more efficient traffic system for everyone!<br>  © 2024 - 2025 Spit</p>
+            
+                    </div>
+                </div>
+            </section>
+            
+            <section id="3Lane" class="content Lane3">
+                    <h1>3-Way RoadCross</h1>
+                    <!-- Analyses -->
+                    <div class="Display">
+                        <div class="Infocard3 partial3" >
+                            <div>
+                                <h2>Static Mode</h2>
+                                <p>operate on pre-set, fixed schedules. The signal timings (green, yellow, and red phases) are determined based on historical data or standard traffic flow patterns, and they remain constant regardless of real-time traffic conditions.</p>
+                            </div>
+                            <div>
+                                <h2> Adaptive Mode</h2>
+                                <p>adapt signal timings in real-time based on current traffic conditions. These systems use various sensors and data analytics to optimize traffic flow, reduce congestion, and improve overall efficiency.</p>
+                            </div>
+                        </div>
+                        <div class="Simulator3 full3">
+                            <div class="Traffic-Lights">
+                                <div class="light Line1" id="light1">
+                                    <div class="red">
+                                        <div class="timer"></div>
+                                    </div>
+                                    <div class="yellow">
+                                        <div class="timer"></div>
+                                    </div>
+                                    <div class="green">
+                                        <div class="timer"></div>
+                                    </div>
+                                </div>
+                                <div class="light Line2" id="light2">
+                                    <div class="red">
+                                        <div class="timer"></div>
+                                    </div>
+                                    <div class="yellow">
+                                        <div class="timer"></div>
+                                    </div>
+                                    <div class="green">
+                                        <div class="timer"></div>
+                                    </div>
+                                </div>
+                                <div class="light Line3" id="light3">
+                                    <div class="red">
+                                        <div class="timer"></div>
+                                    </div>
+                                    <div class="yellow">
+                                        <div class="timer"></div>
+                                    </div>
+                                    <div class="green">
+                                        <div class="timer"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+    
+                        <div class="Control-Panel3 full3">
+                            <h2> Control Panel</h2>
+                            <br>
+                            <hr class="break">
+                            <br>
+                            <div class="switch">
+                                <input type="range" min="1" max="2" value="1" class="modeToggle3" id="modeToggle3">
+                                <span class="mode3" id="mode3">Static</span>
+                            </div>
+                            <br>
+                            <div class="slider-container3">
+                                <div>
+                                    <input type="range" min="1" max="3" value="1" class="slider3" id="slider1">
+                                    <span>Lane1</span>
+                                    <br>
+                                    <span class="sliderLevel3" id="output1">Low</span>
+                                </div>
+                                <br>
+                                <div>
+                                    <input type="range" min="1" max="3" value="1" class="slider3" id="slider2">
+                                    <span>Lane2</span>
+                                    <br>
+                                    <span class="sliderLevel3" id="output2">Low</span>
+                                </div>
+                                <br>
+                                <div>
+                                    <input type="range" min="1" max="3" value="1" class="slider3" id="slider3">
+                                    <span>Lane3</span>
+                                    <br>
+                                    <span class="sliderLevel3" id="output3">Low</span>
+                                </div>
+                                <br>
+                                <div class="break13"></div>
+                                <br>
+                                <hr class="break">
+                            </div>
+                            <div class="title"> 
+                                <div>T R A F F I C - L E V E L</div> 
+                            </div>
+                            <br>
+                            <div class="start3">
+                                <button class="play3">  Simulate </button>
+                                <br>
+                                <br>
+                                <button class="stop3"> Stop </button>
+                                <div class="status3">
+                                    <div class="filler"></div>
+                                </div>
+                            </div>
+                            <br>
+                            <div id="compare3" class="compare-div">COMPARE</div>
+        
+                            <div id="comparison-table3" class="comparison-table hidden">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Feature</th>
+                                            <th>Static Mode</th>
+                                            <th>Dynamic Mode</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Signal Timing</td>
+                                            <td>Fixed</td>
+                                            <td>Adaptive</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Predictability</td>
+                                            <td>High</td>
+                                            <td>Variable</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Implementation</td>
+                                            <td>Simple</td>
+                                            <td>Complex</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cost</td>
+                                            <td>Lower initial and maintenance costs</td>
+                                            <td>Higher initial and maintenance costs</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Efficiency</td>
+                                            <td>Less efficient under variable conditions</td>
+                                            <td>More efficient, optimized for real-time traffic</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Technology Requirement</td>
+                                            <td>Basic hardware</td>
+                                            <td>Advanced sensors, data analytics</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Scalability</td>
+                                            <td>Easy to scale</td>
+                                            <td>More challenging to scale</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                        </div>
+                    </div>
+            </section>
+
+
+            <section id="4Lane" class="content Lane4">
+                <h1>4-Way RoadCross</h1>
+                <!-- Analyses -->
+                <div class="Display">
+                    <div class="Infocard4 partial4" >
+                        <div>
+                            <h2>Static Mode</h2>
+                            <p>operate on pre-set, fixed schedules. The signal timings (green, yellow, and red phases) are determined based on historical data or standard traffic flow patterns, and they remain constant regardless of real-time traffic conditions.</p>
+                        </div>
+                        <div>
+                            <h2> Adaptive Mode</h2>
+                            <p>adapt signal timings in real-time based on current traffic conditions. These systems use various sensors and data analytics to optimize traffic flow, reduce congestion, and improve overall efficiency.</p>
+                        </div>
+                    </div>
+                    <div class="Simulator4 full4">
+                        <div class="Traffic-Lights">
+                            <div class="light Line1" id="light4">
+                                <div class="red">
+                                    <div class="timer"></div>
+                                </div>
+                                <div class="yellow">
+                                    <div class="timer"></div>
+                                </div>
+                                <div class="green">
+                                    <div class="timer"></div>
+                                </div>
+                            </div>
+                            <div class="light Line2" id="light5">
+                                <div class="red">
+                                    <div class="timer"></div>
+                                </div>
+                                <div class="yellow">
+                                    <div class="timer"></div>
+                                </div>
+                                <div class="green">
+                                    <div class="timer"></div>
+                                </div>
+                            </div>
+                            <div class="light Line3" id="light6">
+                                <div class="red">
+                                    <div class="timer"></div>
+                                </div>
+                                <div class="yellow">
+                                    <div class="timer"></div>
+                                </div>
+                                <div class="green">
+                                    <div class="timer"></div>
+                                </div>
+                            </div>
+                            <div class="light Line3" id="light7">
+                                <div class="red">
+                                    <div class="timer"></div>
+                                </div>
+                                <div class="yellow">
+                                    <div class="timer"></div>
+                                </div>
+                                <div class="green">
+                                    <div class="timer"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="Control-Panel4 full4">
+                        <h2> Control Panel</h2>
+                        <br>
+                        <hr class="break">
+                        <br>
+                        <div class="switch">
+                            <input type="range" min="1" max="2" value="1" class="modeToggle4" id="modeToggle4">
+                            <span class="mode4" id="mode4">Static</span>
+                        </div>
+                        <br>
+                        <div class="slider-container4">
+                            <div>
+                                <input type="range" min="1" max="3" value="1" class="slider4" id="slider1">
+                                <span>Lane1</span>
+                                <br>
+                                <span class="sliderLevel4" id="output1">Low</span>
+                            </div>
+                            <br>
+                            <div>
+                                <input type="range" min="1" max="3" value="1" class="slider4" id="slider2">
+                                <span>Lane2</span>
+                                <br>
+                                <span class="sliderLevel4" id="output2">Low</span>
+                            </div>
+                            <br>
+                            <div>
+                                <input type="range" min="1" max="3" value="1" class="slider4" id="slider3">
+                                <span>Lane3</span>
+                                <br>
+                                <span class="sliderLevel4" id="output3">Low</span>
+                            </div>
+                            <br>
+                            <div>
+                                <input type="range" min="1" max="3" value="1" class="slider4" id="slider4">
+                                <span>Lane4</span>
+                                <br>
+                                <span class="sliderLevel4" id="output4">Low</span>
+                            </div>
+                            <br>
+                            <hr class="break">
+                        </div>
+                        <div class="title"> 
+                            <div>T R A F F I C - L E V E L</div> 
+                        </div>
+                        <br>
+                        <div class="start4">
+                            <button class="play4">  Simulate </button>
+                            <br>
+                            <br>
+                            <button class="stop4"> Stop </button>
+                            <div class="status4">
+                                <div class="filler"></div>
+                            </div>
+                        </div>
+                        <br>
+                        <div id="compare4" class="compare-div">COMPARE</div>
+    
+                        <div id="comparison-table4" class="comparison-table hidden">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Feature</th>
+                                        <th>Static Mode</th>
+                                        <th>Dynamic Mode</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Signal Timing</td>
+                                        <td>Fixed</td>
+                                        <td>Adaptive</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Predictability</td>
+                                        <td>High</td>
+                                        <td>Variable</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Implementation</td>
+                                        <td>Simple</td>
+                                        <td>Complex</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cost</td>
+                                        <td>Lower initial and maintenance costs</td>
+                                        <td>Higher initial and maintenance costs</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Efficiency</td>
+                                        <td>Less efficient under variable conditions</td>
+                                        <td>More efficient, optimized for real-time traffic</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Technology Requirement</td>
+                                        <td>Basic hardware</td>
+                                        <td>Advanced sensors, data analytics</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Scalability</td>
+                                        <td>Easy to scale</td>
+                                        <td>More challenging to scale</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                    </div>
+                </div>
+            </section>
+
+            <section id="stats" class="content stats">
+                <h1>Stats</h1>
+                <div class="Displays">
+                    <div>
+                        <h2>Socio-Economic Report</h2>
+                        <br>
+                        <div class="page page1">
+                            <img src="age.png" alt="graph of age of people living in palgahr">
+                            <br>
+                            <br>
+                            <img src="peoplecount.png" alt="graph of number of people living in a household of plaghar">
+                        </div>
+                        <div class="page page2">
+                            <img src="education.png" alt="pie chart of education level of people living in palgahr">
+                            <br>
+                            <br>
+                            <img src="employment.png" alt="pie chart of employemnt status of people living in palgahr">
+                        </div>
+                        <div class="page page3">
+                            <img src="educationalprogram.png" alt="pie chart of current educational status of people living in palgahr">
+                            <br>
+                            <br>
+                            <img src="occupation.png" alt="occupations of people living in palgahr">
+                        </div>
+                        <div class="page page4">
+                            <img src="transportation.png" alt="pie chart of primary mode of transportation of people living in palgahr">
+                            <br>
+                            <br>
+                            <img src="activities.png" alt="graph of people doing commuinal activities in palgahr">
+                        </div>
+
+                        <div class="selector">
+                            <button class="first"> 1 </button>
+                            <button class="second"> 2 </button>
+                            <button class="third"> 3 </button>
+                            <button class="fourth"> 4 </button>
+                        </div>
+
+                    </div>
+                    <div>
+                        <h2>Effects of Adaptic traffic System</h2>
+                        <div class="Apage">
+                            <span><img src="accidents.png" alt="">
+                            <img src="speed.png" alt=""></span>
+                            <br>
+                            <span><img src="trafficdelays.png" alt="">
+                                <img src="fuelconsumption.png" alt=""></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
